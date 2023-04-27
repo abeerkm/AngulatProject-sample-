@@ -1,0 +1,2 @@
+<app-movie *ngFor="let movie of listOfMovies let i=index"
+ [movie]="movie" [borderStyle]="i*2" [inputIndex]="i" (onDel)="deleteMovie($event)"></app-movie>

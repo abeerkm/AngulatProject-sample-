@@ -1,0 +1,8 @@
+<div
+*ngIf="!!movie"
+class='movie-container'
+[ngStyle]="{'border-width':borderStyle+'px'}"
+[ngClass]="{'good-movie':movie.rating>7}">
+  <h1>{{movie.name}}</h1>
+  <button (click)="deleteMovie()">delete</button>
+</div>
